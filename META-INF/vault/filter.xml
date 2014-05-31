@@ -3,5 +3,10 @@
 	<filter root="/apps/chaplin">
 	</filter>
 	<filter root="/etc/designs/chaplin">
+	   <exclude pattern="/etc/designs/chaplin/global/base/js(/.*)?"/>
 	</filter>
+	<filter root="/etc/designs/chaplin/global/base/js/templates">
+	</filter>
+	<filter root="/etc/designs/chaplin/global/base/js/vendor">
+    </filter>
 </workspaceFilter>

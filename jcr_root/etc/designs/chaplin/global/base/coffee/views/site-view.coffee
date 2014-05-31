@@ -5,7 +5,7 @@ define [
   'use strict'
 
   class SiteView extends View
-    container: 'body'
+    container: '#main-page'
     id: 'site-container'
     regions:
       main: '#main-container'

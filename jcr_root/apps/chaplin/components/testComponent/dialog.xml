@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:TabPanel"
+    activeTab="0"
+    title="Test Component"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <tab1
+            jcr:primaryType="cq:Widget"
+            title="General"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <text
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Title"
+                    maxLength="30"
+                    fieldDescription="Text to display below the image"
+                    name="./jcr:description"
+                    xtype="textfield"/>
+                <linkURL
+                    jcr:primaryType="cq:Widget"
+					fieldDescription="Where the user is taken when they click on this component"                    
+					fieldLabel="Link"
+                    name="./linkURL"
+                    predicate="hierarchy"
+                    suffix=".html"
+                    xtype="pathfield"/>
+               <fileReference
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Image"
+                    readOnly="true"
+                    name="./fileReference"
+                    xtype="textfield"/>
+                <title
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Image Title"
+                    fieldDescription="Text to show when the user hovers over the image"
+                    name="./jcr:title"
+                    xtype="textfield"/>
+                <alt
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="(leave empty to use the title defined above)"
+                    fieldLabel="Alt Text"
+                    name="./alt"
+                    xtype="textfield"/>
+                <showSeeAllLink
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Show &quot;See All&quot; link"
+                    defaultValue="true"
+                    inputValue="true"
+                    name="./shc:showSeeAllLink"
+                    type="checkbox"
+                    xtype="selection"/>
+            </items>
+        </tab1>
+        <tab2
+            jcr:primaryType="cq:Widget"
+            title="Links"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+		        <fieldset1
+		            jcr:primaryType="cq:Widget"
+		            title="Link 1"
+		            xtype="fieldset">
+		            	<items jcr:primaryType="cq:WidgetCollection">
+			               <link1Text
+			                    jcr:primaryType="cq:Widget"
+			                    fieldLabel="Text"
+								width="90%"
+			                    maxLength="20"
+			                    name="./shc:link1Text"
+			                    xtype="textfield"/>
+			               <link1Url
+			                    jcr:primaryType="cq:Widget"
+			                    fieldLabel="Link"
+								width="500"
+			                    name="./shc:link1URL"
+			                    predicate="hierarchy"
+			                    suffix=".html"
+			                    xtype="pathfield"/>
+			            </items>
+			   </fieldset1>
+		        <fieldset2
+		            jcr:primaryType="cq:Widget"
+		            title="Link 2"
+		            xtype="fieldset">
+		            	<items jcr:primaryType="cq:WidgetCollection">
+			               <link2Text
+			                    jcr:primaryType="cq:Widget"
+			                    fieldLabel="Text"
+			                    name="./shc:link2Text"
+								width="90%"
+			                    maxLength="20"
+			                    xtype="textfield"/>
+			               <link2Url
+			                    jcr:primaryType="cq:Widget"
+			                    fieldLabel="Link"
+								width="500"
+			                    name="./shc:link2URL"
+			                    predicate="hierarchy"
+			                    suffix=".html"
+			                    xtype="pathfield"/>
+			            </items>
+			   </fieldset2>
+		        <fieldset3
+		            jcr:primaryType="cq:Widget"
+		            title="Link 3"
+		            xtype="fieldset">
+		            	<items jcr:primaryType="cq:WidgetCollection">
+			               <link3Text
+			                    jcr:primaryType="cq:Widget"
+			                    fieldLabel="Text"
+								width="90%"
+			                    name="./shc:link3Text"
+			                    maxLength="20"
+			                    xtype="textfield"/>
+			               <link3Url
+			                    jcr:primaryType="cq:Widget"
+			                    fieldLabel="Link"
+								width="500"
+			                    name="./shc:link3URL"
+			                    predicate="hierarchy"
+			                    suffix=".html"
+			                    xtype="pathfield"/>
+			            </items>
+			   </fieldset3>
+		        <fieldset4
+		            jcr:primaryType="cq:Widget"
+		            title="Link 4"
+		            xtype="fieldset">
+		            	<items jcr:primaryType="cq:WidgetCollection">
+			               <link4Text
+			                    jcr:primaryType="cq:Widget"
+			                    fieldLabel= "Text"
+			                    name="./shc:link4Text"
+								width="90%"
+			                    maxLength="20"
+			                    xtype="textfield"/>
+			               <link4Url
+			                    jcr:primaryType="cq:Widget"
+			                    fieldLabel="Link"
+								width="500"
+			                    name="./shc:link4URL"
+			                    predicate="hierarchy"
+			                    suffix=".html"
+			                    xtype="pathfield"/>
+			            </items>
+			   </fieldset4>
+            </items>
+        </tab2>        
+    </items>
+</jcr:root>

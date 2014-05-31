@@ -13,6 +13,7 @@
   <meta charset="utf-8">
   <title>Chaplin Boilerplate Application</title>
   <style>body { font-family: sans-serif; }</style>
+  <cq:include script="/libs/wcm/core/components/init/init.jsp"/>
   <script src="/etc/designs/chaplin/global/base/js/vendor/requirejs/require.js"></script>
   <script>
   // Configure the AMD module loader
@@ -54,5 +55,8 @@
   </script>
 </head>
 <body>
+    <cq:includeClientLib categories="cq.foundation-main"/>
+    <div id="main-page"></div>
+    <cq:include path="par" resourceType="foundation/components/parsys"/>
 </body>
 </html>
