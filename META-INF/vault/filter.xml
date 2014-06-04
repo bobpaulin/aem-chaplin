@@ -4,8 +4,10 @@
 	</filter>
 	<filter root="/etc/designs/chaplin">
 	   <exclude pattern="/etc/designs/chaplin/global/base/js(/.*)?"/>
+	   <exclude pattern="/etc/designs/chaplin/global/base/css(/.*)?"/>
 	</filter>
 	<filter root="/etc/designs/chaplin/global/base/js/templates">
+	   <exclude pattern="/etc/designs/chaplin/global/base/js/templates/*.js"/>
 	</filter>
 	<filter root="/etc/designs/chaplin/global/base/js/vendor">
     </filter>

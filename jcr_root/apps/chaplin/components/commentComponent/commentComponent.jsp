@@ -3,7 +3,7 @@
                     com.day.cq.wcm.api.WCMMode,
                     org.apache.commons.lang.StringUtils"
 %><%@include file="/libs/foundation/global.jsp" %><%
-%><div class="col<%=currentNode.getName()%>">
+%><div class="span3 col<%=currentNode.getName()%>">
     
 </div>
 <script>

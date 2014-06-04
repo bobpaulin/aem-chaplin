@@ -23,5 +23,5 @@ define [
     storeFirst: ->
       currentComment = @model.get 'comment'
       
-      currentComment.set 'name', $('.name').val()
+      currentComment.set 'userName', $('.name').val()
       Chaplin.utils.redirectTo 'context#showSecond'

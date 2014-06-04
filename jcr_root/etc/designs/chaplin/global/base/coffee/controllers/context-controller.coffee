@@ -9,6 +9,8 @@ define [
   'use strict'
 
   class ContextController extends Controller
+    showDefault: (params) ->
+      return
     showFirst: (params) ->
       window.chaplinContext = new Context()
       window.chaplinContext.set 'comment', new Comments()

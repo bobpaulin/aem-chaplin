@@ -1,13 +1,15 @@
-<div>Second</div>
-<div>
-    <div>Name: {{comment.name}}</div>
-</div>
-<div>
-    <form>
-        <fieldset>
-            <label>Comment</label>
-            <input class="comment" type="text">
-            <button class="btn moveToThird">Continue</button>
-        </fieldset>
-    </form>
+<div class="row-fluid">
+    <div class="span6">Second</div>
+    <div class="span3">
+        <form>
+            <fieldset>
+                <label>Comment</label>
+                <input class="comment" type="text">
+                <button class="btn moveToThird">Continue</button>
+            </fieldset>
+        </form>
+    </div>
+    <div class="span3">
+        <div>Name: {{comment.userName}}</div>
+    </div>
 </div>

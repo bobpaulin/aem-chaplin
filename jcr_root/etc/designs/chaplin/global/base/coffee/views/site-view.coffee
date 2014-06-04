@@ -9,5 +9,6 @@ define [
     id: 'site-container'
     regions:
       main: '#main-container'
+      nav: '#nav-container'
     template: template
     template = null

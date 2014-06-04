@@ -22,4 +22,4 @@ define [
     saveComment: ->
       currentComment = @model.get 'comment'
       currentComment.save()
-      Chaplin.utils.redirectTo 'nav#show'      
+      Chaplin.utils.redirectTo 'context#showDefault'      

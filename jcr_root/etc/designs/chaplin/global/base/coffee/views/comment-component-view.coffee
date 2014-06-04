@@ -13,7 +13,11 @@ define [
     template = null
     initialize: ->
       @model = new Comments()
-      @model.fetch()
+      theModel = @model
+      setInterval(->
+        theModel.fetch()
+      , 1000)
+      
       super
       @subscribeEvent 'commentsLoaded', @render
       

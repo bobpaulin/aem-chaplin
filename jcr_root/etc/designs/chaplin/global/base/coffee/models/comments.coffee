@@ -12,8 +12,7 @@ define [
       '/etc/test/data/comments'
     fetch: (opts) ->
       comment = @ 
-      $.get('/bin/querybuilder.json?type=nt:unstructured&nodename=comment*&path=/etc/test', opts.data, (data) ->
-        opts.success(data)
+      $.get('/bin/querybuilder.json?p.hits=full&type=nt:unstructured&nodename=comment*&path=/etc/test', null, (data) ->
         comment.set(comment.parse(data, opts), opts)
         Chaplin.mediator.publish 'commentsLoaded'
       )

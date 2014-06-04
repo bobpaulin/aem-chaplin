@@ -14,6 +14,7 @@
   <style>body { font-family: sans-serif; }</style>
   <link rel="stylesheet" type="text/css" href="/etc/designs/chaplin/global/base/css/bootstrap.css"></link>
   <link rel="stylesheet" type="text/css" href="/etc/designs/chaplin/global/base/css/responsive.css"></link>
+  <link rel="stylesheet" type="text/css" href="/etc/designs/chaplin/global/base/css/app.css"></link>
   <cq:include script="/libs/wcm/core/components/init/init.jsp"/>
   <script src="/etc/designs/chaplin/global/base/js/vendor/requirejs/require.js"></script>
   <script src="/etc/designs/chaplin/global/base/js/vendor/bootstrap/js/bootstrap.js"></script>
@@ -59,6 +60,8 @@
 <body>
     <cq:includeClientLib categories="cq.foundation-main"/>
     <div id="main-page" class="row-fluid"></div>
-    <cq:include path="par" resourceType="foundation/components/parsys"/>
+    <div class="row-fluid">
+        <cq:include path="par" resourceType="foundation/components/parsys"/>
+    </div>
 </body>
 </html>
