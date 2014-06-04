@@ -1,13 +1,13 @@
 define [
   'views/base/view'
-  'templates/hello-world/hello-world'
+  'templates/nav/nav'
 ], (View, template) ->
   'use strict'
 
-  class HelloWorldView extends View
+  class NavView extends View
     # Automatically render after initialize.
     autoRender: true
-    className: 'hello-world'
+    className: 'nav'
 
     # Save the template string in a prototype property.
     # This is overwritten with the compiled template function.

@@ -9,4 +9,6 @@
 	</filter>
 	<filter root="/etc/designs/chaplin/global/base/js/vendor">
     </filter>
+    <filter root="/etc/test">
+    </filter>
 </workspaceFilter>

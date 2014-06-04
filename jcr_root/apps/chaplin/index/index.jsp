@@ -6,15 +6,17 @@
 <%@taglib prefix="sling" uri="http://sling.apache.org/taglibs/sling/1.0"%>
 <%@taglib prefix="webresource" uri="http://sling.apache.org/taglibs/sling/webresource/1.0.0"%>
 <cq:defineObjects/>
-
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
   <title>Chaplin Boilerplate Application</title>
   <style>body { font-family: sans-serif; }</style>
+  <link rel="stylesheet" type="text/css" href="/etc/designs/chaplin/global/base/css/bootstrap.css"></link>
+  <link rel="stylesheet" type="text/css" href="/etc/designs/chaplin/global/base/css/responsive.css"></link>
   <cq:include script="/libs/wcm/core/components/init/init.jsp"/>
   <script src="/etc/designs/chaplin/global/base/js/vendor/requirejs/require.js"></script>
+  <script src="/etc/designs/chaplin/global/base/js/vendor/bootstrap/js/bootstrap.js"></script>
   <script>
   // Configure the AMD module loader
   requirejs.config({
@@ -56,7 +58,7 @@
 </head>
 <body>
     <cq:includeClientLib categories="cq.foundation-main"/>
-    <div id="main-page"></div>
+    <div id="main-page" class="row-fluid"></div>
     <cq:include path="par" resourceType="foundation/components/parsys"/>
 </body>
 </html>
